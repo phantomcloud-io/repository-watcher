@@ -11,9 +11,8 @@ For detailed instructions, please refer to the [documentation](https://www.serve
 
 Depending on your preferred cloud provider, follow the instructions below to deploy your project.
 
-> **Obtian GitHub OAuth Token**
-- 
-
+> **Obtian GitHub Personal Access Token**
+- Generating Personal Access Token [GitHub Documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
 > **Configure AWS Access**
 - AWS Credentials [cli-configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
