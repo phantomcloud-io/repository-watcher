@@ -4,7 +4,8 @@ This project has been generated using the `aws-nodejs-typescript` template from 
 
 For detailed instructions, please refer to the [documentation](https://www.serverless.com/framework/docs/providers/aws/).
 
-## Service Logic Flow
+## Presentation
+- https://docs.google.com/presentation/d/1gT1EaFa3ifgLe04TcLNva3GgAUYYMgQHkocathjH8PE/edit?usp=sharing
 
 
 ## Installation/deployment instructions
