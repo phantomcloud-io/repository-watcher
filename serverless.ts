@@ -16,7 +16,7 @@ const serverlessConfiguration: AWS = {
     environment: {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
       NODE_OPTIONS: '--enable-source-maps --stack-trace-limit=1000',
-      GITHUB_TOKEN: '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',
+      GITHUB_TOKEN: '',
     },
   },
   // import the function via paths

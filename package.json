@@ -15,9 +15,7 @@
     "@middy/http-json-body-parser": "^2.5.3",
     "@octokit/webhooks-types": "^5.4.0",
     "esbuild": "^0.14.21",
-    "octokit": "^1.7.1",
-    "then-request": "^6.0.2",
-    "util": "^0.12.4"
+    "octokit": "^1.7.1"
   },
   "devDependencies": {
     "@serverless/typescript": "^2.23.0",
