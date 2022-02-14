@@ -161,7 +161,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/github/dev/1644790238458-2022-02-13T22:10:38.458Z/repositoryWatcher.zip"
+          "S3Key": "serverless/github/dev/1644799992354-2022-02-14T00:53:12.354Z/repositoryWatcher.zip"
         },
         "Handler": "src/functions/repositoryWatcher/handler.main",
         "Runtime": "nodejs14.x",
@@ -172,7 +172,7 @@
           "Variables": {
             "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
             "NODE_OPTIONS": "--enable-source-maps --stack-trace-limit=1000",
-            "GITHUB_TOKEN": "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"
+            "GITHUB_TOKEN": "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"
           }
         },
         "Role": {
@@ -186,14 +186,14 @@
         "RepositoryWatcherLogGroup"
       ]
     },
-    "RepositoryWatcherLambdaVersionws0pdoBSPTt8xY0K4PqcOVdu3LdS3xCWA3bw0IdBHAk": {
+    "RepositoryWatcherLambdaVersionN6gaucX21F6KKZmoMx2tDkNLEWe4R8rBGsIOqF07Yk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "RepositoryWatcherLambdaFunction"
         },
-        "CodeSha256": "glx/tuuxVZWoLPvY8T2X2FmJXTdpwRKo4No//13oyDs="
+        "CodeSha256": "5No+9Adyoo1B1EqmZVXscaXpWstDwGgdc4f8RWQyHpA="
       }
     },
     "ApiGatewayRestApi": {
@@ -334,7 +334,7 @@
         }
       }
     },
-    "ApiGatewayDeployment1644790237454": {
+    "ApiGatewayDeployment1644799991320": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -396,7 +396,7 @@
     "RepositoryWatcherLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "RepositoryWatcherLambdaVersionws0pdoBSPTt8xY0K4PqcOVdu3LdS3xCWA3bw0IdBHAk"
+        "Ref": "RepositoryWatcherLambdaVersionN6gaucX21F6KKZmoMx2tDkNLEWe4R8rBGsIOqF07Yk"
       },
       "Export": {
         "Name": "sls-github-dev-RepositoryWatcherLambdaFunctionQualifiedArn"

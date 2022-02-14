@@ -5,11 +5,12 @@ import * as protectionConfig from '../../config.json';
 
 
 const repositoryWatcher = async (event) => {  
+    // console.log(event.body)
     const { repository, sender } = event.body;
     const repo = repository.name;
     const owner = repository.owner.login;
     const username = sender.login;
-  
+    //   action: 'created',
     try {
       await updateRepository(repo, owner, username)
     } catch (err) {
@@ -30,7 +31,7 @@ const updateRepository = async (repo, owner, username) => {
 
   const octokit = github.getOctokit(process.env.GITHUB_TOKEN);
   const protection = await octokit.rest.repos.updateBranchProtection(config);
-
+  console.log(`Protection Created: ${protection.status == 200 ? true: false}`);
   if(protection.status == 200){
     await octokit.rest.issues.create({
       owner: owner,
